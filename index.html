@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VR Valentines</title>
+  <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-camera>
+      <a-text id="score-element" value="Score" position="-0.35 0.5 -0.8"></a-text>
+      <a-cursor></a-cursor>
+    </a-camera>
+
+    <a-entity environment="preset:japan"></a-entity>
+    <a-entity laser-controls></a-entity>
+  </a-scene>
+
+  <a-entity id="heart-model" gltf-model="Heart.gltf" position="0 1.5 -5"
+    scale="0.01 0.01 0.01"
+    animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 2000"
+    animation__collect="property: position; to: 0 0 0; dur: 300; startEvents: collected"
+    animation__minimize="property: scale; to: 0 0 0; dur: 300; startEvents: collected"></a-entity>
+
+  <script src="game.js"></script>
+</body>
+</html>
