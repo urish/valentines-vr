@@ -1,8 +1,8 @@
-# vr-valetines
+# valetines-vr
 
 A small heart-collecting game live-coded during [IoT Makers Meetup](https://www.meetup.com/IoT-Makers-Israel/events/257266871/) using [A-Frame](https://aframe.io).
 
-[Try it online](https://urish.github.io/vr-valentines)
+[Play the game](https://urish.github.io/valentines-vr)
 
 ## License
 
